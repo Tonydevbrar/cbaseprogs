@@ -95,7 +95,7 @@ int main() {
             //# Setting up window
             XClearWindow(display, window);
             XGetWindowAttributes(display, window, &gwa);
-            //# Calling BAckground
+            //# Calling Background
             draw_gradient(display, window, gc, gwa.width, gwa.height);
             //# Setting up variables
             int wwidth = gwa.width ;

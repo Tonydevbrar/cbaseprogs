@@ -85,8 +85,9 @@ int main() {
     if (font) {
         XSetFont(display, gc, font->fid);
     }
-    //# Main window loop
+    //# Reposition window "spawn" position
     XMoveResizeWindow(display, window, window_xpos, window_ypos, window_width, window_height);
+    //# Main window loop
     XMapWindow(display, window);
     XEvent event;
     while (1) {
